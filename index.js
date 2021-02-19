@@ -249,10 +249,15 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/*Your Code Here*/){
-  /*Your Code Here*/
-}
+// function get20s(array, search){
+//   for(let i = 0; i < array, length; i++){
+//     if(array[i].includes(search)){
+//       return array[i];
+//     }
+//   }
+// }
 
+// console.log(get20s(artists, "1900 - 2000"));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -264,7 +269,7 @@ function get20s(/*Your Code Here*/){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/){
+function removeArtist(array, index){
    /*Your Code Here*/
 }
    
@@ -284,12 +289,14 @@ Use addArtist to do the following:
 3. Return the resulting array
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
+ 
 
-function addArtist(/*Your Code Here*/){
-    /*Your Code Here*/
+function addArtist(array, id, name, years, genre, nationality, bio){
+    array.push({id, name, years, genre, nationality, bio});
+    return array;
   }
 
-  
+console.log(addArtist(artists, 20, 'Edison Jeon', '1993 - 2021', 'Web Design', 'Korean', 'Not good at drawing.  So I play outside.'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
