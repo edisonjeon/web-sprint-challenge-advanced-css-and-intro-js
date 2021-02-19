@@ -249,7 +249,7 @@ Use get20s to do the following:
 Example born in 1901 and died in 1959 - included -- born in 1889 and died in 1925 not included
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(array){ 
+function get20s(array){ /* WRONG */
   years = '1900 - 2000';
   yearsNumber = Number(years)
   let typeArray =[];
@@ -277,10 +277,10 @@ function get20s(array){
  
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(array, number){ 
+function removeArtist(array, number){ /* WRONG */
    for (let i = 0; i < array.length ; i++){
      if(array[i] === number){
-       array.split(i, 1);
+       array.splice(i, 1);
      }
    }
    return array.length;
