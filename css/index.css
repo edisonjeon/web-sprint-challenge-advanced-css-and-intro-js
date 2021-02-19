@@ -174,13 +174,20 @@ button:hover{
         justify-content: center;
         align-items: center;
         max-width: 100%;
+        text-align: center;
+    }
+    .artist{
+        flex-direction: column;
+        width: 100%;
+        font-size: 1.2rem;
     }
     .artist img{
         height: 20vh;
-        width: 100%;
-        /* NEED TO ADJUST SIZING AND MARGINS*/
+        width: 50%;
+        NEED TO ADJUST SIZING AND MARGINS
     }
     .artist a{
         font-size: 2rem;
     }
+    
 }
