@@ -204,27 +204,27 @@ export const artists = [
 // 🖌🖼 M V P 🖼🖌 //
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
-Practice accessing data above by console.log-ing following items:
+// Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
 
-console.log(artists[0].name);
+// console.log(artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-console.log(artists[2].bio);
+// console.log(artists[2].bio);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
-There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
+// There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
 function editName(array, index, newName){
   array[index].name = newName;
   return array
 }
 
-console.log(editName(artists, 9, 'Vincent Van Gogh'));
+// console.log(editName(artists, 9, 'Vincent Van Gogh'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
  Use getArtistByIndex to do the following:
@@ -250,8 +250,6 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array){ /* WRONG */
-  years = '1900 - 2000';
-  yearsNumber = Number(years)
   let typeArray =[];
   for(let i = 0; i < array.length; i++){
     const activeYears = array[i].years.split(' - ')
@@ -278,12 +276,8 @@ function get20s(array){ /* WRONG */
  For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
 function removeArtist(array, number){ /* WRONG */
-   for (let i = 0; i < array.length ; i++){
-     if(array[i] === number){
-       array.splice(i, 1);
-     }
-   }
-   return array.length;
+  array.splice(number, 1);
+  return array.length;
 }
    
 
@@ -309,7 +303,7 @@ function addArtist(array, id, name, years, genre, nationality, bio){
     return array;
   }
 
-console.log(addArtist(artists, 20, 'Edison Jeon', '1993 - 2021', 'Web Design', 'Korean', 'Not good at drawing.  So I play outside.'));
+// console.log(addArtist(artists, 20, 'Edison Jeon', '1993 - 2021', 'Web Design', 'Korean', 'Not good at drawing.  So I play outside.'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use lotsOfArt to do the following: 
@@ -333,7 +327,7 @@ function lotsOfArt(array){
 
 // 🎨🎨 STRETCH 🎨🎨//
 /* 💪💪💪💪💪💪 STRETCH 1: 💪💪💪💪💪💪 
-Programmatically console.log HTML element structure.
+// Programmatically console.log HTML element structure.
 
 In HTML, every artist and associated content uses the following structure: 
 
@@ -347,9 +341,9 @@ In HTML, every artist and associated content uses the following structure:
 <div class = "bio">Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.</div>
 </div>
 
-Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to format and console.log data like the example above. 
+// Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to format and console.log data like the example above. 
 
-The function should console.log 50 chunks of HTML code that match the structure above. 
+// The function should console.log 50 chunks of HTML code that match the structure above. 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
@@ -378,7 +372,7 @@ function randomize(/* Code here */){
  
  /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑*/
  function foo(){
-  console.log('its working');
+  // console.log('its working');
   return 'bar';
 }
 /*Don't touch the code after this line! */
